@@ -1,11 +1,23 @@
+# SDK test
+
+## Architecture
+
+```mermaid
+graph
+  payment-system --> SDK --> TTK
+```
+
+
+## SDK ports
 
 - **Port 4000**: Inbound API (receives requests from Mojaloop)
 - **Port 4001**: Outbound API (sends requests to Mojaloop) - **Use this for transfers**
 - **Port 4002**: Test API
 
+## Test
 
 ```bash
-curl http://localhost:4001/parties/MSISDN/22912345678
+curl http://localhost:4001/parties/MSISDN/22912345678 | jq .
 
 
 curl -X POST \
