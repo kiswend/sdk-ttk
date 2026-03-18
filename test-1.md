@@ -7,7 +7,7 @@ AUTO_ACCEPT_QUOTES=true
 AUTO_ACCEPT_PARTY=true
 ```
 
-## Test
+# Test
 
 ```bash
 curl -X POST \

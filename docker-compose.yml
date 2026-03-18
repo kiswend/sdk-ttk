@@ -33,6 +33,24 @@ services:
       - sh
       - /usr/share/nginx/start.sh
 
+  sim:
+    networks:
+      - ml-sdk-ttk-net
+    image: mojaloop/mojaloop-simulator:latest
+    env_file: ./sim-backend.env
+    volumes:
+      - ./rules:/opt/app/rules
+    ports:
+      - "3000:3000"
+      - "3002:3002"
+      - "3003:3003"
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:3000/health"]
+      timeout: 20s
+      retries: 10
+      start_period: 40s
+      interval: 30s
+
   mojaloop-connector-load-test:
     networks:
       - ml-sdk-ttk-net
@@ -45,6 +63,7 @@ services:
       - "9229:9229"
     depends_on:
       - redis
+      - sim
     command: yarn nx run modules-api-svc:start
     volumes:
       - ./secrets:/opt/app/secrets
