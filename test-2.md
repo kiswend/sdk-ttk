@@ -4,8 +4,8 @@
 
 Set the SDK config to disable auto accept party and quote
 ```
-AUTO_ACCEPT_QUOTES=true
-AUTO_ACCEPT_PARTY=true
+AUTO_ACCEPT_QUOTES=false
+AUTO_ACCEPT_PARTY=false
 ```
 
 # Test
@@ -166,7 +166,7 @@ curl -X POST \
 
 ```bash
 curl -X PUT \
-  http://localhost:4001/transfers/01KM0C006Q7XXR16H499P7NQQT \
+  http://localhost:4001/transfers/01KM0N1R1MJ6AY7HAXQGGJ156S \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -d '{
@@ -433,7 +433,7 @@ curl -X PUT \
 
 ```bash
 curl -X PUT \
-  http://localhost:4001/transfers/01KM0C006Q7XXR16H499P7NQQT \
+  http://localhost:4001/transfers/01KM0N1R1MJ6AY7HAXQGGJ156S \
   -H 'Content-Type: application/json' \
   -H 'Accept: application/json' \
   -d '{

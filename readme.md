@@ -4,9 +4,9 @@
 
 ```mermaid
 graph LR
-  CBS --4001--> SDK
+  CBS --4001--> SDK --- TTK
 
-  TTK --4000--> SDK
+
 
   subgraph participant
     CBS
