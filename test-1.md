@@ -1,5 +1,5 @@
 
-# Test with auto accept party and and
+# Test with auto accept party/quote
 
 ```
 # SDK config

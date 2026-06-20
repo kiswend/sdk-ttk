@@ -1,5 +1,5 @@
 
-# Test with auto accept party and and
+# Test with dedicated endpoints
 
 
 Set the SDK config to disable auto accept party and quote
