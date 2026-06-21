@@ -13,6 +13,8 @@ AUTO_ACCEPT_PARTY=false
 
 ## Discovery
 
+### Request sent by the CBS to the SDK
+
 ```bash
 curl -X POST \
   http://localhost:4001/transfers \
@@ -38,6 +40,7 @@ curl -X POST \
 
 ```
 
+### Response returned by the SDK to the CBS
 
 ```json
 {
@@ -164,6 +167,8 @@ curl -X POST \
 
 ## Agreement of terms
 
+### Request sent by the CBS to the SDK
+
 ```bash
 curl -X PUT \
   http://localhost:4001/transfers/01KM0N1R1MJ6AY7HAXQGGJ156S \
@@ -174,6 +179,8 @@ curl -X PUT \
 }' | jq .
 
 ```
+
+### Response returned by the SDK to the CBS
 
 ```json
 {
@@ -431,6 +438,8 @@ curl -X PUT \
 
 ## Transfer
 
+### Request sent by the CBS to the SDK
+
 ```bash
 curl -X PUT \
   http://localhost:4001/transfers/01KM0N1R1MJ6AY7HAXQGGJ156S \
@@ -441,6 +450,8 @@ curl -X PUT \
 }' | jq .
 
 ```
+
+### Response returned by the SDK to the CBS
 
 ```json
 {
