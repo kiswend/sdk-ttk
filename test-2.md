@@ -11,9 +11,9 @@ AUTO_ACCEPT_PARTY=false
 # Test Flow
 
 
-## Discovery
+## 1. Discovery
 
-### Request sent by the CBS to the SDK
+### 1.1. Request sent by the CBS to the SDK
 
 ```bash
 curl -X POST \
@@ -40,7 +40,7 @@ curl -X POST \
 
 ```
 
-### Response returned by the SDK to the CBS
+### 1.2. Response returned by the SDK to the CBS
 
 ```json
 {
@@ -165,9 +165,9 @@ curl -X POST \
 ```
 
 
-## Agreement of terms
+## 2. Agreement of terms
 
-### Request sent by the CBS to the SDK
+### 2.1. Request sent by the CBS to the SDK
 
 >The transfer id must match the one returned in the response of the discovery request
 
@@ -182,7 +182,7 @@ curl -X PUT \
 
 ```
 
-### Response returned by the SDK to the CBS
+### 2.2. Response returned by the SDK to the CBS
 
 ```json
 {
@@ -438,9 +438,9 @@ curl -X PUT \
 ```
 
 
-## Transfer
+## 3. Transfer
 
-### Request sent by the CBS to the SDK
+### 3.1. Request sent by the CBS to the SDK
 
 >The transfer id must match the one returned in the response of the discovery request
 
@@ -455,7 +455,7 @@ curl -X PUT \
 
 ```
 
-### Response returned by the SDK to the CBS
+### 3.2. Response returned by the SDK to the CBS
 
 ```json
 {
