@@ -169,7 +169,7 @@ curl -X POST \
 
 ### Request sent by the CBS to the SDK
 
->The transfer id much match the one returned in the response of the discovery request
+>The transfer id must match the one returned in the response of the discovery request
 
 ```bash
 curl -X PUT \
@@ -442,7 +442,7 @@ curl -X PUT \
 
 ### Request sent by the CBS to the SDK
 
->The transfer id much match the one returned in the response of the discovery request
+>The transfer id must match the one returned in the response of the discovery request
 
 ```bash
 curl -X PUT \
