@@ -169,6 +169,8 @@ curl -X POST \
 
 ### Request sent by the CBS to the SDK
 
+>The transfer id much match the one returned in the response of the discovery request
+
 ```bash
 curl -X PUT \
   http://localhost:4001/transfers/01KM0N1R1MJ6AY7HAXQGGJ156S \
@@ -439,6 +441,8 @@ curl -X PUT \
 ## Transfer
 
 ### Request sent by the CBS to the SDK
+
+>The transfer id much match the one returned in the response of the discovery request
 
 ```bash
 curl -X PUT \
